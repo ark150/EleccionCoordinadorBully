@@ -23,6 +23,7 @@ public class Proceso implements Serializable{
         this.id = id;
         this.puerto = puerto;
         this.direccion = direccion;
+        this.coordinador="sin";
     }
 
     public Proceso(int id, int puerto, String direccion, int estado) {
@@ -30,7 +31,7 @@ public class Proceso implements Serializable{
         this.puerto = puerto;
         this.direccion = direccion;
         this.estado = estado;
-        this.coordinador=null;
+        this.coordinador="sin";
     }
     
     

@@ -16,12 +16,16 @@ public class Mensaje implements Serializable{
     private int id;
     private int tipo;
     private int variable;
+    private Proceso proceso;
 
-    public Mensaje(int id, int tipo, int variable) {
+    public Mensaje(int id, int tipo, int variable, Proceso proceso) {
         this.id = id;
         this.tipo = tipo;
         this.variable = variable;
+        this.proceso = proceso;
     }
+
+    
 
     public int getId() {
         return id;
@@ -46,6 +50,16 @@ public class Mensaje implements Serializable{
     public void setVariable(int variable) {
         this.variable = variable;
     }
+
+    public Proceso getProceso() {
+        return proceso;
+    }
+
+    public void setProceso(Proceso proceso) {
+        this.proceso = proceso;
+    }
+    
+    
 
     @Override
     public String toString() {
